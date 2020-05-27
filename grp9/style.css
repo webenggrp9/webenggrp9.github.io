@@ -1,0 +1,409 @@
+body {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	background-image:url(images/y.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center center;
+	background-attachment:fixed;
+}
+#mainpic
+{
+background-image:url(images/9.png);
+background-repeat:no-repeat;
+background-size:cover;
+background-position:center center;
+width:100%;
+height:300px;	
+}
+.intro{
+	margin:0;
+	padding:0;
+	font-family:consolas;
+	min-height: 100px;
+	
+}
+.container{
+	position: relative;
+	-webkit-box-reflect:below;
+}
+.container span{
+	position:relative;
+	display:inline-block;
+	color: #94b998;
+	font-size: 2em;
+	text-transform: uppercase;
+	animation:  animate 1s ease-in-out infinite;
+	animation-delay: calc(0.1s * var(--i));
+}
+@keyframes animate
+{
+0%
+{
+	transform: translateY(0px);
+}
+20%
+{
+	transform: translateY(-20px);
+	
+}
+40%,100%
+{
+	transform: translateY(0px);
+}
+}
+.container h1{
+text-align:center;
+padding-top: 100px;
+font-size: 70px;
+}	
+
+#content{
+width:900px;
+height:800px;
+margin: 100px auto;
+position:relative;
+}	
+
+
+#content h1
+{
+	text-align:center;
+	font-size: 50px;
+	font-family:MV Boli;
+	color: white;
+	}
+	#content p
+{
+	text-align:center;
+	font-size:30px ;
+	padding-top: 10px;
+	color:white;
+}
+#about h1
+{
+	text-align:center;
+	font-size: 60px;
+	font-family:MV Boli;
+	color:white;
+	}
+#about p
+{
+	text-align:center;
+	font-size:60px ;
+	padding-top: 10px;
+	color:white;
+	
+}
+.content{
+	box-sizing:border-box;
+}
+.product{
+	box-sizing: border-box;
+}
+.column{
+	float: left;
+	width:30%;
+	padding-left:60px;
+	padding-bottom:50px;
+	padding-top:50px;
+	border:2px solid #transparent;
+}
+.pro{
+	padding:15px;
+	text-align:center;
+	color:white;
+	font-size:20px;
+}
+
+*{
+	box-sizing: border-box;
+}
+#contact h1
+{
+	text-align:center;
+	font-size:50px;
+	font-family:MV Boli;
+	color:black;
+
+}
+.contact-form{
+	width:85%;
+	max-width:600px;
+	background: #f1f1f1;
+	position:absolute;
+	left: 50%;
+	top:800px;
+	transform: translate(-50%,-50%);
+	padding: 30px 40px;
+	box-sizing: border-box;
+	border-radius: 8px;
+	text-align: center;
+	box-shadow: 0 0 20px #000000b3;
+}
+.cf{
+	width:85%;
+	max-width:600px;
+	background: #f1f1f1;
+	position:absolute;
+	left: 50%;
+	top:800px;
+	transform: translate(-50%,-50%);
+	padding: 30px 40px;
+	box-sizing: border-box;
+	border-radius: 8px;
+	text-align: center;
+	box-shadow: 0 0 20px #000000b3;
+}
+.txtb{
+	border:1px solid gray;
+	margin: 8px 0;
+	padding: 12px 18px;
+	border-radius:8px;
+}
+.txtb label{
+	display:block;
+	text-align:left;
+	color: #333;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+.txtb input,.txtb textarea{
+	width: 100%;
+	border:none;
+	background:none;
+	outline:none;
+	font-size: 18px;
+	margin-top:6px;
+}
+.btn{
+	display: inline-block;
+	background: #9b59b6;
+	padding: 14px 0;
+	color:white;
+	text-transform: uppercase;
+	cursor: pointer;
+	margin-top: 8px;
+	width: 100%;
+	text-align:center;
+}
+.header{
+  height: 100px;
+  background: #f4d351;
+  padding: 0 20px;
+  color: #fff;
+  padding:15px;
+  background-image:url(images/t.png);
+background-repeat:no-repeat;
+background-size:cover;
+background-position:center center;
+}
+.logo{
+  line-height: 10px;
+  float: left;
+  text-transform: uppercase;
+  font-size:40px;
+  color:black;
+}
+.menu{
+  float: right;
+  line-height: 50px;
+  font-size:20px;
+}
+.menu a{
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 10px;
+  transition: 0.4s;
+}
+.show-menu-btn,.hide-menu-btn{
+  transition: 0.4s;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+.show-menu-btn{
+  float: right;
+}
+.show-menu-btn i{
+  line-height: 100px;
+}
+}
+.menu a:hover,
+.show-menu-btn:hover,
+.hide-menu-btn:hover{
+  color: #3498db;
+}
+#chk{
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+}
+@media screen and (max-width:800px) {
+  .show-menu-btn,.hide-menu-btn{
+    display: block;
+  }
+  .menu{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 80px 0;
+    line-height: normal;
+    transition: 0.7s;
+  }
+  .menu a{
+    display: block;
+    padding: 20px;
+  }
+  .hide-menu-btn{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+  #chk:checked ~ .menu{
+    right: 0;
+  }
+  .container h1{
+text-align:center;
+padding-top: 100px;
+font-size: 40px;
+}	
+  #content{
+width:600px;
+height:500px;
+margin: 100px auto;
+position:relative;
+}
+#content h1
+{
+	text-align:center;
+	font-size: 30px;
+	font-family:MV Boli;
+	color:white;
+	}
+	#content p
+{
+	text-align:center;
+	font-size:20px ;
+	padding-top: 10px;
+	color:white;
+	
+}
+#about h1
+{
+	text-align:center;
+	font-size: 60px;
+	font-family:MV Boli;
+	color:white;
+	}
+	#about p
+{
+	text-align:center;
+	font-size:60px ;
+	padding-top: 10px;
+	color:white;
+	
+}
+.product{
+	box-sizing: border-box;
+}
+.column{
+	float: left;
+	width:30%;
+	padding-left:10px;
+	padding-bottom:10px;
+	padding-top:10px;
+	border:2px solid #transparent;
+}
+.pro{
+	padding:10px;
+	text-align:center;
+	color:white;
+	font-size:20px;
+}
+
+#contact h1
+{
+	text-align:center;
+	font-size:50px;
+	font-family:MV Boli;
+	color:black;
+
+}
+.contact-form{
+	width:85%;
+	max-width:600px;
+	background: #f1f1f1;
+	position:absolute;
+	left: 50%;
+	top:800px;
+	transform: translate(-50%,-50%);
+	padding: 30px 40px;
+	box-sizing: border-box;
+	border-radius: 8px;
+	text-align: center;
+	box-shadow: 0 0 20px #000000b3;
+}
+.cf{
+	width:85%;
+	max-width:600px;
+	background: #f1f1f1;
+	position:absolute;
+	left: 50%;
+	top:800px;
+	transform: translate(-50%,-50%);
+	padding: 30px 40px;
+	box-sizing: border-box;
+	border-radius: 8px;
+	text-align: center;
+	box-shadow: 0 0 20px #000000b3;
+}
+.txtb{
+	border:1px solid gray;
+	margin: 8px 0;
+	padding: 12px 18px;
+	border-radius:8px;
+}
+.txtb label{
+	display:block;
+	text-align:left;
+	color: #333;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+.txtb input,.txtb textarea{
+	width: 100%;
+	border:none;
+	background:none;
+	outline:none;
+	font-size: 18px;
+	margin-top:6px;
+}
+.btn{
+	display: inline-block;
+	background: #9b59b6;
+	padding: 14px 0;
+	color:white;
+	text-transform: uppercase;
+	cursor: pointer;
+	margin-top: 8px;
+	width: 100%;
+	text-align:center;
+}
+#error_message{
+	margin-bottom: 20px;
+	background:#fe8b83;
+	padding: 0px;
+	text-align: center;
+	font-size: 14px;
+	transition: all 0.5s ease;
+}
+

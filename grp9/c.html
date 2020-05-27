@@ -1,0 +1,65 @@
+
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<title>ELECTURE|Group 9 </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+ <script src="script.js"></script>
+</head>
+
+<body>
+<div id="container">
+		<div id="mainpic">
+        </div> 
+		
+  <div class="header">
+    <h2 class="logo">ELECTURE</h2>
+    <input type="checkbox" id="chk">
+    <label for="chk" class="show-menu-btn">
+      <i class="fas fa-ellipsis-h"></i>
+    </label>
+
+    <ul class="menu">
+      <a href="h.html">Home</a>
+      <a href="a.html">About</a>
+      <a href="p.html">product</a>
+      <a href="c.html">Contact</a>
+      <label for="chk" class="hide-menu-btn">
+        <i class="fas fa-times"></i>
+      </label>
+    </ul>
+  </div>
+		<div id="contact">
+		<div class="contact-form" action="contact-form-handler.php" method="post">
+		<h1>CONTACT US</h1>
+		<div id "error_message"></div>
+		<form id="myform" onsubmit="return validate();">
+		<div class="txtb">
+		<label>Full Name:</label>
+		<input type="text" name="name" value="" placeholder="Enter Your Name">
+		</div>
+		
+				<div class="txtb">
+		<label>Email:</label>
+		<input type="email" name="mail" value="" placeholder="Enter Your email">
+		</div>
+		
+				<div class="txtb">
+		<label>Phone Number:</label>
+		<input type="text" name="number" value="" placeholder="Enter Your Phone Number">
+		</div>
+		
+				<div class="txtb">
+		<label>Message:</label>
+		<textarea placeholder ="Message" id="message"></textarea>
+		</div>
+		<button class="btn"="center">Send</button>
+		</div>
+		</div>
+		</div>
+		</form>
+		
+</body>
+</html>
